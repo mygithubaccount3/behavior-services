@@ -5,6 +5,7 @@ const imagemin = require('imagemin-webpack-plugin').default;
 const purgeCSS = require('purgecss-webpack-plugin');
 const glob = require('glob');
 const autoprefixer = require('autoprefixer');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 const PATHS = {
     src: path.join(__dirname, '../src'),
@@ -73,6 +74,7 @@ module.exports = {
             }]
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: `${PATHS.assets}css/[name].css`
         }),
@@ -81,10 +83,7 @@ module.exports = {
             { from: `${PATHS.src}/index.html`, to: '' }
         ]),
         new imagemin({
-            disable: process.env.NODE_ENV !== 'production',
-            pngquant: {
-                quality: '70-75'
-            }
+            pngquant: ({quality: 50})
         }),
         new purgeCSS({
             paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),
