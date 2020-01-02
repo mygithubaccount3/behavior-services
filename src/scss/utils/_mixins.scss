@@ -1,0 +1,69 @@
+@import "./variables";
+
+@mixin respond-to($media) {
+
+  @if $media == middleSmartphone {
+    @media (max-device-width: $largePhone) { @content; }
+  }
+
+  @else if $media == tablet {
+    @media (min-device-width: $tabletPortrait) and (max-device-width: $tabletLandscape) { @content; }
+  }
+
+  @else if $media == smallScreen {
+    @media (max-width: $tabletPortrait) { @content; }
+  }
+
+  @else if $media == largePhone {
+    @media (min-device-width: 320px) and (max-device-width: $largePhone) { @content; }
+  }
+
+  @else if $media == largePhoneLandscape {
+    @media (max-device-width: $largePhoneLandscape) and (orientation : landscape) { @content; }
+  }
+
+  @else if $media == desktop {
+    @media (min-device-width: 1024px) { @content; }
+  }
+
+  @else if $media == ipadpro {
+    @media only screen
+    and (min-device-width: $tabletPortrait)
+    and (max-device-width: $tabletLandscape)
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+      @content;
+    }
+  }
+
+  @else if $media == phoneAndTablet {
+    @media only screen and (max-width: $tabletLandscape) { @content; }
+  }
+}
+
+@mixin size($width,$height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@function rem($pixels, $context: $mainFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+@mixin overlay($bg-color, $opacity) {
+  background-color: $bg-color;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: $opacity;
+}

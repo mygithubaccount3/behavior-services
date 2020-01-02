@@ -1,0 +1,114 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.footer {
+  border-top: 3px solid #cccccc;
+  padding-top: 43px;
+  padding-bottom: 52px;
+
+  @include respond-to(phoneAndTablet) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: auto auto 46px;
+    padding-left: 0;
+    @include size(38%);
+
+    @include respond-to(phoneAndTablet) {
+      margin-bottom: 10px;
+      @include size(100%);
+    }
+
+    & > li {
+      & > a {
+        color: #999999;
+        font-family: Lato, sans-serif;
+        font-size: rem(16);
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__separator {
+    display: flex;
+    justify-content: space-between;
+    margin: auto auto 41px;
+    @include size(10%);
+
+    @include respond-to(phoneAndTablet) {
+      margin-bottom: 10px;
+      @include size(20%);
+    }
+
+    & > div {
+      @include size(13px, 13px);
+      background-color: #eeeeee;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    @include size(27%);
+
+    @include respond-to(phoneAndTablet) {
+      @include size(100%);
+    }
+
+    & > a {
+      color: #aaaaaa;
+      font-family: Lato, sans-serif;
+      font-size: rem(14);
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0.7px;
+      text-align: center;
+      text-decoration: none;
+
+      &:first-child {
+        margin-bottom: 7px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 2px;
+      }
+
+      &:last-child {
+        color: #e1aa6e;
+        font-family: Lato, sans-serif;
+        font-size: rem(16);
+        font-weight: 700;
+        line-height: 33.75px;
+        letter-spacing: 0.9px;
+      }
+    }
+  }
+
+  &__copyright {
+    opacity: 0.6;
+    color: #aaaaaa;
+    font-family: Lato, sans-serif;
+    font-size: rem(12);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: auto;
+    text-align: center;
+    @include size(79%);
+
+    &::before {
+      border: 1px solid #eeeeee;
+      content: "";
+      display: block;
+      margin-top: 42px;
+      margin-bottom: 31px;
+    }
+  }
+}

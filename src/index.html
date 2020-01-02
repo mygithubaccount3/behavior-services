@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <title>McGrew Behavior Services</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__nav-wrapper">
+        <img src="assets/img/logo.png" alt="Logo">
+        <div id='cssmenu'>
+            <ul>
+                <li class="hvr-underline-from-left"><a href='https://google.com'>Home</a></li>
+                <li class='active'><a href='https://google.com'>About us</a>
+                    <ul>
+                        <li><a href='https://google.com'>Link 1</a>
+                            <ul>
+                                <li><a href='https://google.com'>Sub link 1</a></li>
+                                <li><a href='https://google.com'>Sub link 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='https://google.com'>Link 2</a>
+                            <ul>
+                                <li><a href='https://google.com'>Sub link 1</a></li>
+                                <li><a href='https://google.com'>Sub link 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hvr-underline-from-left"><a href='https://google.com'>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="header__title">We can help.</h1>
+    <p class="header__description">Teaching independence to the lives of the people you love with reliable,
+        individualized emotional and behavioral therapy.
+    </p>
+    <button class="header__help">Find help here</button>
+</header>
+<main class="content">
+    <div class="content__partners">
+        <img src="assets/img/magellan.png" alt="Magellan Health">
+        <img src="assets/img/kaiser.png" alt="Kaiser Permanente">
+        <img src="assets/img/anthem.png" alt="Anthem">
+        <img src="assets/img/north-bay.png" alt="North Bay Regional Center">
+        <img src="assets/img/partnership-health-plan.png" alt="Partnership HealthPlan of California">
+        <img src="assets/img/aetna.png" alt="Aetna">
+    </div>
+    <div class="content__age">
+        <h1>Support For People Of All Walks of Life</h1>
+        <p>Children as young as 2 years old may begin to develop behaviors which need extra support and attention.</p>
+        <img src="assets/img/people.png" alt="People">
+    </div>
+    <div class="content__contact">
+        <h1>McGrew Behavior Services Helps...</h1>
+        <p>Families, organizations and health care providers in Northern California. Our knowledge and experience
+            provide the specialized support people need when overcoming behavioral challenges.</p>
+        <button>CONTACT US</button>
+    </div>
+    <div class="content__support">
+        <img src="assets/img/overlay.png" alt="Overlay">
+        <div>
+            <img src="assets/img/slide.png" alt="Slide">
+            <img src="assets/img/slide.png" alt="Slide">
+            <img src="assets/img/slide.png" alt="Slide">
+        </div>
+    </div>
+    <div class="content__join-us">
+        <img src="assets/img/team.png" alt="Team">
+        <h2>Be a part of something bigger than yourself. Make a difference.</h2>
+        <h1>Join Our Team.</h1>
+        <p>We are always looking for highly motivated individuals who aligned with our committment to making a
+            difference in the lives of other people. Whether you’re a BCBA or interested in ABA work we are interested
+            in talking to you!</p>
+        <button>FIND WHAT’S AVAILABLE</button>
+    </div>
+</main>
+<footer class="footer">
+    <ul class="footer__links">
+        <li>
+            <a href="https://google.com">Home</a>
+        </li>
+        <li>
+            <a href="https://google.com">About us</a>
+        </li>
+        <li>
+            <a href="https://google.com">Contact</a>
+        </li>
+        <li>
+            <a href="https://google.com">Careers</a>
+        </li>
+    </ul>
+    <div class="footer__separator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="footer__contacts">
+        <a href="https://goo.gl/maps/A2q3rmUwrXPd7Qm19" class="footer__location" target="_blank">120 Theresa Ave, American Canyon, CA 94503</a>
+        <a href="tel:707.561.0134">707.561.0134</a>
+        <a href="mailto:familyresources@mbisinc.com">familyresources@mbisinc.com</a>
+    </div>
+    <p class="footer__copyright">Copyright Ⓒ 2017 McGrews Behavior Services All Rights Reserved</p>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.content__support > div').slick({
+            arrows: false,
+            dots: false,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+    });
+    });
+</script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
