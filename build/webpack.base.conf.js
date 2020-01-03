@@ -83,7 +83,7 @@ module.exports = {
             { from: `${PATHS.src}/index.html`, to: '' }
         ]),
         new imagemin({
-            pngquant: ({quality: 50})
+            pngquant: ({quality: 75})
         }),
         new purgeCSS({
             paths: glob.sync(`${PATHS.src}/**/*`,  { nodir: true }),

@@ -141,9 +141,9 @@
 
       @include respond-to(phoneAndTablet) {
         top: 30px;
-        right: 10%;
-        left: 10%;
-        @include size(80%)
+        right: 15%;
+        left: 15%;
+        @include size(70%)
       }
     }
   }
@@ -154,6 +154,7 @@
 
     @include respond-to(phoneAndTablet) {
       margin-top: 80px;
+      padding-right: 15px;
       padding-left: 15px;
     }
 

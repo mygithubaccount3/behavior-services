@@ -9,7 +9,7 @@
   padding: 40px 30px 139px;
 
   @include respond-to(phoneAndTablet) {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 
   &__nav-wrapper {
@@ -22,12 +22,15 @@
     }
 
     & > img {
-      @include size(32%, fit-content);
+      @include size(364px, 29px);
 
       @include respond-to(phoneAndTablet) {
         margin-top: 35px;
         order: 2;
-        @include size(37%);
+      }
+
+      @media screen and (max-device-width: 364px){
+        @include size(100%, auto);
       }
     }
   }
@@ -41,7 +44,7 @@
     letter-spacing: 1.3px;
     line-height: 1.65;
     margin-bottom: 4px;
-    @include size(26%);
+    @include size(36%);
 
     @media screen and (min-width: 1024px) {
       margin-top: 118px;
@@ -49,6 +52,9 @@
 
     @include respond-to(phoneAndTablet) {
       font-size: rem(40);
+    }
+
+    @include respond-to(smallScreen) {
       @include size(100%);
     }
   }
@@ -64,6 +70,10 @@
     @include size(40%);
 
     @include respond-to(phoneAndTablet) {
+      @include size(50%);
+    }
+
+    @include respond-to(smallScreen) {
       @include size(100%);
     }
   }
@@ -83,6 +93,10 @@
     @include size(285px);
 
     @include respond-to(phoneAndTablet) {
+      @include size(40%);
+    }
+
+    @include respond-to(smallScreen) {
       @include size(80%);
     }
   }

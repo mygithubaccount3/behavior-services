@@ -8,7 +8,7 @@
 }
 @media only screen and (max-width: 1024px) {
   .header {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 }
 .header__nav-wrapper {
@@ -22,14 +22,18 @@
   }
 }
 .header__nav-wrapper > img {
-  width: 32%;
-  height: fit-content;
+  width: 364px;
+  height: 29px;
 }
 @media only screen and (max-width: 1024px) {
   .header__nav-wrapper > img {
     margin-top: 35px;
     order: 2;
-    width: 37%;
+  }
+}
+@media screen and (max-device-width: 364px) {
+  .header__nav-wrapper > img {
+    width: 100%;
     height: auto;
   }
 }
@@ -42,7 +46,7 @@
   letter-spacing: 1.3px;
   line-height: 1.65;
   margin-bottom: 4px;
-  width: 26%;
+  width: 36%;
   height: auto;
 }
 @media screen and (min-width: 1024px) {
@@ -53,6 +57,10 @@
 @media only screen and (max-width: 1024px) {
   .header__title {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .header__title {
     width: 100%;
     height: auto;
   }
@@ -69,6 +77,12 @@
   height: auto;
 }
 @media only screen and (max-width: 1024px) {
+  .header__description {
+    width: 50%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
   .header__description {
     width: 100%;
     height: auto;
@@ -90,6 +104,12 @@
   height: auto;
 }
 @media only screen and (max-width: 1024px) {
+  .header__help {
+    width: 40%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
   .header__help {
     width: 80%;
     height: auto;
@@ -582,9 +602,9 @@
 @media only screen and (max-width: 1024px) {
   .content__support > div {
     top: 30px;
-    right: 10%;
-    left: 10%;
-    width: 80%;
+    right: 15%;
+    left: 15%;
+    width: 70%;
     height: auto;
   }
 }
@@ -595,6 +615,7 @@
 @media only screen and (max-width: 1024px) {
   .content__join-us {
     margin-top: 80px;
+    padding-right: 15px;
     padding-left: 15px;
   }
 }
