@@ -67,3 +67,19 @@
   left: 0;
   opacity: $opacity;
 }
+
+@mixin text($color, $size, $weight, $shadow: none) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  text-shadow: $shadow;
+}
+
+@mixin pseudo-element() {
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  border: 6px solid transparent;
+  border-right-color: #fff;
+  margin-top: -6px;
+}

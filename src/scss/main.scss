@@ -1,12 +1,19 @@
-@import "utils/variables";
-@import "utils/mixins";
 @import "modules/header";
 @import "modules/content";
 @import "modules/footer";
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: Lato, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
