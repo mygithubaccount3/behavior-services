@@ -6,11 +6,6 @@
   flex-direction: column;
   margin-bottom: 59px;
 
-  @include respond-to(phoneAndTablet) {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
   &__partners {
     align-items: flex-start;
     display: flex;
@@ -31,6 +26,8 @@
 
     @include respond-to(phoneAndTablet) {
       padding-top: 0;
+      padding-right: 15px;
+      padding-left: 15px;
     }
 
     & > h1, & > p {
@@ -70,6 +67,11 @@
     align-items: center;
     padding-top: 49px;
 
+    @include respond-to(phoneAndTablet) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
     & > h1 {
       letter-spacing: 0.4px;
       @include text(#777777, rem(24), bold);
@@ -88,15 +90,14 @@
       }
     }
 
-    & > button {
+    & > a {
       background-color: #e1aa6e;
-      border: none;
       box-shadow: 0 10px 0 0 rgba(186,142,91,1);
       cursor: pointer;
-      letter-spacing: -0.7px;
       margin-bottom: 81px;
-      padding-top: 20px;
-      padding-bottom: 17px;
+      padding-top: 17px;
+      padding-bottom: 19px;
+      text-align: center;
       @include size(23.8%);
       @include text(#ffffff, rem(20), 400);
 
@@ -151,6 +152,7 @@
       @include size(50.6%);
       float: left;
       margin-right: 30px;
+      max-width: 608px;
 
       @include respond-to(phoneAndTablet) {
         width: 100%;
@@ -179,13 +181,16 @@
         @include text(#ffffff, rem(18), 400)
       }
 
-      & > button {
+      & > a {
         background-color: #00b5d2;
-        border: none;
+        box-shadow: 0 10px 0 0 #008ea5;
         cursor: pointer;
+        display: inline-block;
         margin-top: 22px;
         margin-bottom: 15px;
-        padding: 20px 20px 17px;
+        padding-top: 17px;
+        padding-bottom: 19px;
+        text-align: center;
         text-transform: uppercase;
         @include size(23.7%);
         @include text(#ffffff, rem(20), 400);

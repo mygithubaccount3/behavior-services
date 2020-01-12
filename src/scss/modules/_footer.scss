@@ -26,8 +26,16 @@
 
     & > li {
       & > a {
+        padding-left: 3px;
+        padding-right: 3px;
         text-transform: uppercase;
-        @include text(#999999, rem(16), 700)
+        transition: all 0.2s ease-in-out 0s;
+        @include text(#999999, rem(16), 700);
+
+        &:hover {
+          color: #fff;
+          background: #367ab7;
+        }
       }
     }
   }

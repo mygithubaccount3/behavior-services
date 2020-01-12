@@ -77,12 +77,11 @@
 
   &__help {
     background-color: #e1aa6e;
-    border: none;
     box-shadow: 0 10px 0 0 rgba(186,142,91,1);
     cursor: pointer;
-    padding-top: 19px;
-    padding-bottom: 18px;
-    padding-left: 14px;
+    padding-top: 17px;
+    padding-bottom: 19px;
+    text-align: center;
     text-transform: uppercase;
     @include size(285px);
     @include text(#ffffff, rem(20), 400);
@@ -178,7 +177,7 @@
 
 .menu li a:hover, .menu li:hover>a .menu ul li a:hover, .menu ul li:hover>a {
   color: #fff;
-  background: #00b5d2;
+  background: #367ab7;
 }
 
 .menu li:hover>ul, .menu li>ul ul:hover {
@@ -263,7 +262,7 @@
   }
 
   .menu li a:hover,.menu li:hover>a {
-    background: #00b5d2;
+    background: #367ab7;
     color: #fff;
   }
 
