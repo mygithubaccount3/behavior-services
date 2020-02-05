@@ -1,0 +1,6 @@
+.hvr-round-corners {
+    transition: border-radius 0.3s;
+}
+.hvr-round-corners:hover, .hvr-round-corners:focus, .hvr-round-corners:active {
+    border-radius: 1em;
+}

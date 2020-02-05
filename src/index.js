@@ -1,3 +1,5 @@
 import './scss/main.scss'
 import './css/underline-from-left.css'
+import './css/round-corners.css'
+import './css/underline-reveal.css'
 import './js/dropdown'

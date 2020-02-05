@@ -2,7 +2,7 @@
 @import "../utils/mixins";
 
 .header {
-  background-image: url("/behavior-services/dist/assets/img/jared-sluyter.png");
+  background-image: url("/assets/img/jared-sluyter.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -111,6 +111,7 @@
     }
 
     & a {
+      border-radius: 5px;
       padding: 6px 14px;
       display: block;
       transition: all 0.2s ease-in-out 0s;
@@ -120,6 +121,7 @@
   }
 
   & ul {
+    border-radius: 5px;
     visibility: hidden;
     opacity: 0;
     margin: 0;
