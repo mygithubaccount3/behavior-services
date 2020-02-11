@@ -23,7 +23,7 @@
   }
 
   @else if $media == desktop {
-    @media (min-device-width: 1024px) { @content; }
+    @media (min-width: 1024px) { @content; }
   }
 
   @else if $media == ipadpro {
